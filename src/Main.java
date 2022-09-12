@@ -16,20 +16,21 @@ public class Main {
         peopleList.add(3, person4);
         peopleList.add(4, person5);
 
-        System.out.println("Array List");
+        System.out.println("Array List :");
         for (int i=0; i<peopleList.size(); i++) {
             System.out.println(peopleList.get(i));
         }
         System.out.println("Array List size: " + peopleList.size() + "\n");
 
         Set<Person> peopleSet = new HashSet<>(peopleList);
-        System.out.println("Hash Set");
+        System.out.println("Hash Set :");
         Iterator itr = peopleSet.iterator();
         while (itr.hasNext()) {
             System.out.println(itr.next());
         }
         System.out.println("Hash Set size: " + peopleSet.size() + "\n");
 
+        System.out.println("Hashmap :");
         Map<Integer, Person> peopleHashmap = new HashMap<>();
         peopleHashmap.put(1,person1);
         peopleHashmap.put(2,person2);
